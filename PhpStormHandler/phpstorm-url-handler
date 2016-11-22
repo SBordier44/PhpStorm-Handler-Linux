@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+# PhpStorm URL Handler
+# phpstorm://open?url="file_path"&line="line"
+#
+# @license GPL3+
+# @author NuBOX DevCom <slye@nubox.fr>
+
+arg=${1}
+
+# Get the file path.
+file=$(echo "${arg}" | awk -F'file=' '{print $2}' | awk -F'&' '{print $1}')
+
+# Get the line number.
+line=$(echo "${arg}" | awk -F'line=' '{print $2}')
+
+/usr/bin/env pstorm "${file}:${line}"
