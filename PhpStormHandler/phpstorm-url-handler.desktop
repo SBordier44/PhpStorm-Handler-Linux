@@ -1,12 +1,12 @@
 [Desktop Entry]
-Version=1.1
+Version=1.2
 Type=Application
 Name=PhpStorm URL Handler
-Comment=Handle URL Scheme phpstorm://open?url="file_path"&line="line_of_file" For Ubuntu/Debian Users
+Comment=Handle URL Scheme phpstorm://open?file="file_path"&line="line_of_file"
 Icon=phpstorm
 NoDisplay=true
 Categories=TextEditor;Utility;
 Exec=phpstorm-url-handler %u
 Terminal=false
 MimeType=x-scheme-handler/phpstorm;x-scheme-handler/pstorm;
-X-Desktop-File-Install-Version=0.22
+X-Desktop-File-Install-Version=0.23

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # PhpStorm URL Handler
-# phpstorm://open?url="file_path"&line="line"
+# phpstorm://open?file="file_path"&line="line"
 #
 # @license GPL3+
 # @author NuBOX DevCom <slye@nubox.fr>
